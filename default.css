@@ -1,0 +1,18 @@
+/* Set up colour palette and fonts using variables */
+
+:root {
+  --primary: #7dbbc3;
+  --onprimary: #000000;
+  --secondary: #495054;
+  --onsecondary: #ffffff;
+  --tertiary: #edae49;
+  --ontertiary: #000000;
+  --page: #ffffff;
+  --onpage: #000000;
+  --detail: #9ba8ae;
+  --detail2: #000000;
+
+  --body-font: 1rem Verdana, sans-serif;
+  --header-font: lighter 3rem "Bangers", sans-serif;
+  --title-font: lighter 2rem "Bangers", sans-serif;
+}

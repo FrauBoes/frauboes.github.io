@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<!-- keep the line below for OpenProcessing compatibility -->
+	<script src="https://openprocessing.org/openprocessing_sketch.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
+	
+	<!-- Title shown in web browsers-->
+  <title>Add a title here</title>
+	
+	<!-- Import fonts from Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+	
+  <!-- Include CSS style file -->   
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="default-new.css" rel="stylesheet" type="text/css" />
+	<link href="animation.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body> 
+	
+    <!-- The page header code goes here -->
+    <header class="border-bottom secondary">
+      <h1>Draw Anime With Me</h1>
+    </header>
+
+    <!-- The main content for the webpage goes between the main tags -->
+    <main class="primary">
+      <section class="tertiary">
+			  <h2>Facial Expressions</h2>
+				<p>Anime has a large range of facial expressions.
+				Many of these were developed for the 
+					<a href="https://en.wikipedia.org/wiki/Manga" target="_blank">manga</a> format.</p>
+				<p>Take a look at these facial expressions and try them in your own drawing.</p>
+				<ul>
+				  <li>happy</li>
+					<li>unsure</li>
+					<li>annoyed</li>
+				</ul>
+			</section> 
+     
+      <!-- The first drawing and instructions go here -->     
+      <section class="wrap">
+			  <img class="rounded shadow movemeright" src="happy.png" alt="Happy facial expression">
+				<p>A <b>happy</b> face uses two thick curved lines for the eyes and a wide mouth.</p>
+			</section>
+
+      <!-- The second drawing and instructions go here -->
+      <section class="wrap">
+			  <img class="rounded shadow movemeright" src="unsure.png" alt="Unsure facial expression">
+				<p>An <b>unsure</b> face can be drawn with open eyes and a short, thin line for the mouth.</p>
+			</section>
+        
+      <!-- The third drawing and instructions go here -->
+      <section class="wrap">
+			  <img class="rounded shadow movemeright" src="annoyed.png" alt="Annoyed facial expression">
+				<p>An <b>annoyed</b> face can be drawn with large eyes and a short, diagonal line for the mouth.</p>
+			</section>
+			
+			<!-- Flip Card -->
+			<section class="tertiary">
+			  <h2>Favourite Anime Character</h2>
+			</section>
+			
+			<section class="wrap">
+				<div class="card">
+					<div class="card-content">
+						<!-- Vorderseite mit Bild-->
+						<div class="card-face gradient1 rounded shadow">
+							<img src="Naruto.png" alt="Naruto">
+						</div>
+						<!-- Rückseite mit Text-->
+						<div class="card-face flipme gradient2 rounded shadow ycenter">
+							<h2>Naruto</h2>
+							<p>A young ninja who dreams of becoming the leader of his village.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Guess the colour game -->
+			<section class="tertiary">
+			  <h2>Guess the colour!</h2>
+			</section>
+			<section>
+			  <h2 id="colourValue"></h2>
+				<div id="buttonWrapper">
+				  <button class="colourButton"></button>
+				  <button class="colourButton"></button>
+				  <button class="colourButton"></button>
+				  <button class="colourButton"></button>
+				  <button class="colourButton"></button>
+				  <button class="colourButton"></button>
+				</div>
+				<h2 id="answer"></h2>
+				<div id="reset">
+				  <button id="resetButton">Reset game</button>
+				</div>
+			</section>
+       
+    </main>
+
+    <!-- Footer code go here -->
+    <footer class="border-top secondary">
+      <p>Made with love by Julia in 2025 </p>
+    </footer>
+
+	<script src="script.js"></script>
+	
+  </body>
+</html>
